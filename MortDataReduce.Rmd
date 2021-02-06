@@ -1,0 +1,19 @@
+---
+title: "MortDataReduce"
+author: "Tingsong Ou"
+date: "1/31/2021"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+library(tidyverse);
+
+```
+
+
+```{r reduce}
+mortData <- read_csv('data/mort.csv');
+mortData <- mortData %>% select(1, 2, 3, 28) %>% filter(FIPS > 10);
+write.csv(mortData,'data/MortData_reduced.csv');
+```
+

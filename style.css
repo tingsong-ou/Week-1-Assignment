@@ -1,9 +1,29 @@
+h1, #categories, p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size:28px;
+    padding-bottom: 5px;
+}
+
 .container {
-    width: 800px;
+    width: 1000px;
     margin: auto;
+    padding-top: 10px;
 }
 
 g.map > path {
     fill: none;
-    stroke: #ccc;
+}
+
+#categories{
+    text-align: center;
+}
+
+#selectACategory{
+    padding: 3px;
+    font-size: medium;
+    margin-bottom: 10px;
 }
