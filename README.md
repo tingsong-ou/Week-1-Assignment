@@ -1,6 +1,6 @@
 # Tingsong Ou - Week 1 Assignment
 
-Github Page Link: https://tingsong-ou.github.io/Week-1-Assignment/
+Github Page Link: https://tingsong-ou.github.io/Week-1-assignment/
 
 1. Data Processing: 
 
