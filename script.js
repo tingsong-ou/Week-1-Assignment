@@ -66,14 +66,17 @@ function colorMap(paths, inputData){
         .domain([extent[1],extent[0]])
         .interpolator(d3.interpolateRdYlBu);
 
-    paths.style('fill', function(d){
-        let countyID = `${d.properties.STATE}${d.properties.COUNTY}`;
-        let value = inputData.filter(d => d.FIPS.padStart(5,'0') === countyID);
-        if(value.length > 0){
-            value = value[0];
-            return colorScale(value['% Change in Mortality Rate, 1980-2014']);
-        }else return '#ccc';        
-    });
+    paths
+        .transition()
+        .duration(1000)
+        .style('fill', function(d){
+            let countyID = `${d.properties.STATE}${d.properties.COUNTY}`;
+            let value = inputData.filter(d => d.FIPS.padStart(5,'0') === countyID);
+            if(value.length > 0){
+                value = value[0];
+                return colorScale(value['% Change in Mortality Rate, 1980-2014']);
+            }else return '#ccc';        
+        });
 }
 
 

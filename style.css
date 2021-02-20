@@ -1,5 +1,8 @@
+html{
+    font-family:monospace;
+}
+
 h1, #categories, p{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
@@ -23,7 +26,8 @@ g.map > path {
 }
 
 #selectACategory{
+    font-family:monospace;
     padding: 3px;
-    font-size: medium;
+    font-size: 12px;
     margin-bottom: 10px;
 }
